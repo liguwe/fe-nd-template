@@ -1,4 +1,3 @@
-// app/controller/news.js
 const Controller = require('egg').Controller;
 
 class NewsController extends Controller {

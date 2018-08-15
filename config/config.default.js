@@ -3,9 +3,6 @@
  * 一般也会作为开发环境的默认配置文件
  * */
 
-
-
-
 module.exports = (appInfo) => {
     const config = exports = {};
 

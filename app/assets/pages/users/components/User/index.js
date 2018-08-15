@@ -1,7 +1,7 @@
 
 import { Table, Pagination, Popconfirm, Button } from 'antd';
 import { routerRedux } from 'dva/router';
-import styles from './index.scss';
+import styles from './index.less';
 import { PAGE_SIZE } from '../../services/constants';
 import UserModal from '../UserModel/index';
 

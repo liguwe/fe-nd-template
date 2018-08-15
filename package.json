@@ -9,6 +9,7 @@
     "stop": "./node_modules/.bin/egg-scripts stop",
     "restart": "npm run stop && npm  run start",
     "dev": "./node_modules/.bin/egg-bin dev",
+    "umi": "APP_ROOT=$PWD/app/assets HTML=none  ./node_modules/.bin/umi dev",
     "build": "APP_ROOT=$PWD/app/assets HTML=none  ./node_modules/.bin/umi build"
   },
   "author": "",
@@ -20,8 +21,8 @@
     "egg-view-nunjucks": "^2.2.0"
   },
   "devDependencies": {
-    "antd": "^3.8.1",
     "dva": "^2.4.0",
+    "antd": "^3.8.1",
     "egg-bin": "^4.8.1",
     "umi": "^1.3.18",
     "umi-plugin-dva": "^0.9.1"

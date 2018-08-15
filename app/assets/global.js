@@ -1,5 +1,4 @@
 /**
- * 可以在这里加入 polyfill
- * 全局性的引用
+ * 全局性的引用，如polyfill
  * */
-
+console.log("this is global.js");

@@ -1,5 +1,5 @@
-import { Component } from 'react';
-import { Modal, Form, Input } from 'antd';
+import {Component} from 'react';
+import {Modal, Form, Input} from 'antd';
 
 const FormItem = Form.Item;
 
@@ -26,7 +26,7 @@ class UserEditModal extends Component {
     };
 
     okHandler = () => {
-        const { onOk } = this.props;
+        const {onOk} = this.props;
         this.props.form.validateFields((err, values) => {
             if (!err) {
                 onOk(values);
@@ -36,18 +36,18 @@ class UserEditModal extends Component {
     };
 
     render() {
-        const { children } = this.props;
-        const { getFieldDecorator } = this.props.form;
-        const { name, email, website } = this.props.record;
+        const {children} = this.props;
+        const {getFieldDecorator} = this.props.form;
+        const {name, email, website} = this.props.record;
         const formItemLayout = {
-            labelCol: { span: 6 },
-            wrapperCol: { span: 14 },
+            labelCol: {span: 6},
+            wrapperCol: {span: 14},
         };
 
         return (
             <span>
         <span onClick={this.showModelHandler}>
-          { children }
+          {children}
         </span>
         <Modal
             title="Edit User"
@@ -55,7 +55,7 @@ class UserEditModal extends Component {
             onOk={this.okHandler}
             onCancel={this.hideModelHandler}
         >
-          <Form horizontal onSubmit={this.okHandler}>
+          <Form horizontal='true' onSubmit={this.okHandler}>
             <FormItem
                 {...formItemLayout}
                 label="Name"
@@ -63,7 +63,7 @@ class UserEditModal extends Component {
               {
                   getFieldDecorator('name', {
                       initialValue: name,
-                  })(<Input />)
+                  })(<Input/>)
               }
             </FormItem>
             <FormItem
@@ -73,7 +73,7 @@ class UserEditModal extends Component {
               {
                   getFieldDecorator('email', {
                       initialValue: email,
-                  })(<Input />)
+                  })(<Input/>)
               }
             </FormItem>
             <FormItem
@@ -83,7 +83,7 @@ class UserEditModal extends Component {
               {
                   getFieldDecorator('website', {
                       initialValue: website,
-                  })(<Input />)
+                  })(<Input/>)
               }
             </FormItem>
           </Form>
