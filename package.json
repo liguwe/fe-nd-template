@@ -1,19 +1,23 @@
 {
-  "name": "fe-ndog",
+  "name": "fe-nd-template",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "./node_modules/.bin/egg-bin dev"
+    "start": "./node_modules/.bin/egg-scripts start --daemon --env prod",
+    "stop": "./node_modules/.bin/egg-scripts stop",
+    "restart": "npm run stop && npm  run start",
+    "dev": "./node_modules/.bin/egg-bin dev",
+    "build": "APP_ROOT=$PWD/app/assets HTML=none  ./node_modules/.bin/umi build"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
     "egg": "^2.10.0",
+    "egg-scripts": "^2.8.0",
     "egg-view-assets": "^1.1.2",
-    "egg-view-ejs": "^2.0.0",
-    "moment": "^2.22.2"
+    "egg-view-nunjucks": "^2.2.0"
   },
   "devDependencies": {
     "antd": "^3.8.1",

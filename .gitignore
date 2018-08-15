@@ -4,3 +4,6 @@
 
 run/
 
+app/assets/pages/.umi
+
+logs/

@@ -20,7 +20,7 @@ class NewsController extends Controller {
             ],
             time:1533897066110
         };
-        await this.ctx.render('news/list.ejs', dataList);
+        await this.ctx.render('news/list.html', dataList);
     }
 }
 
