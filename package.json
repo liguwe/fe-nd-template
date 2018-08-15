@@ -5,25 +5,14 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "./node_modules/.bin/egg-scripts start --daemon --env prod",
-    "stop": "./node_modules/.bin/egg-scripts stop",
-    "restart": "npm run stop && npm  run start",
-    "dev": "./node_modules/.bin/egg-bin dev",
-    "umi": "APP_ROOT=$PWD/app/assets HTML=none  ./node_modules/.bin/umi dev",
-    "build": "APP_ROOT=$PWD/app/assets HTML=none  ./node_modules/.bin/umi build"
+    "dev": "./node_modules/.bin/umi dev",
+    "build": "./node_modules/.bin/umi build"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "egg": "^2.10.0",
-    "egg-scripts": "^2.8.0",
-    "egg-view-assets": "^1.1.2",
-    "egg-view-nunjucks": "^2.2.0"
-  },
-  "devDependencies": {
     "dva": "^2.4.0",
     "antd": "^3.8.1",
-    "egg-bin": "^4.8.1",
     "umi": "^1.3.18",
     "umi-plugin-dva": "^0.9.1"
   }

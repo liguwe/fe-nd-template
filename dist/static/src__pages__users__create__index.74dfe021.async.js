@@ -1,0 +1,1 @@
+webpackJsonp([10],{"3nDj":function(e,n,t){"use strict";Object.defineProperty(n,"__esModule",{value:!0});var r=t("GiK3"),u=t.n(r);n.default=function(){return u.a.createElement("div",null,"user/create page")}}});

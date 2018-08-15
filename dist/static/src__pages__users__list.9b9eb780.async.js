@@ -1,0 +1,1 @@
+webpackJsonp([8],{A1BA:function(e,t,n){"use strict";Object.defineProperty(t,"__esModule",{value:!0});var u=n("GiK3"),r=n.n(u);t.default=function(){return r.a.createElement("div",null,"user/list page")}}});
