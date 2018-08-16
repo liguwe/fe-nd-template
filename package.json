@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "{{description}}",
   "main": "index.js",
+  "branch": "umi",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "./node_modules/.bin/umi dev",
