@@ -7,3 +7,5 @@ run/
 app/assets/pages/.umi
 
 logs/
+
+package-lock.json
