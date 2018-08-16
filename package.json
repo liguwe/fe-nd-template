@@ -3,13 +3,14 @@
   "version": "1.0.0",
   "description": "{{description}}",
   "main": "index.js",
+  "branch": "master",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "./node_modules/.bin/egg-scripts start --daemon --env prod",
     "stop": "./node_modules/.bin/egg-scripts stop",
     "restart": "npm run stop && npm  run start",
-    "dev": "./node_modules/.bin/egg-bin dev",
-    "umi": "APP_ROOT=$PWD/app/assets HTML=none  ./node_modules/.bin/umi dev",
+    "local": "./node_modules/.bin/egg-bin dev",
+    "dev": "APP_ROOT=$PWD/app/assets HTML=none  ./node_modules/.bin/umi dev",
     "build": "APP_ROOT=$PWD/app/assets HTML=none  ./node_modules/.bin/umi build"
   },
   "author": "{{author}}",
