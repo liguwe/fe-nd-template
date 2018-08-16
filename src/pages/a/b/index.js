@@ -1,5 +1,5 @@
 export default () => {
     return (
-        <div>user/create/list page</div>
+        <div>a/b page</div>
     );
 };

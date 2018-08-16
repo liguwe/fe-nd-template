@@ -1,7 +1,5 @@
 export default () => {
     return (
-        <div>404 page
-            <footer>footer</footer>
-        </div>
+        <div>404 page</div>
     );
 };

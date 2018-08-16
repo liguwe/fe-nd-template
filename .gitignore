@@ -4,6 +4,11 @@
 
 run/
 
-src/.umi/
+src/page/.umi/
 
 logs/
+
+package-lock.json
+
+app
+
