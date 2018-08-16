@@ -6,7 +6,7 @@ export default {
     plugins: [
         ['umi-plugin-dva', {immer: true}]
     ],
-    outputPath: '../public/',
+    outputPath: '../public/assets/',
     disableServiceWorker: true,
 };
 

@@ -22,7 +22,6 @@
   },
   "devDependencies": {
     "dva": "^2.4.0",
-    "antd": "^3.8.1",
     "egg-bin": "^4.8.1",
     "umi": "^1.3.18",
     "umi-plugin-dva": "^0.9.1"

@@ -15,11 +15,17 @@ class NewsController extends Controller {
                     time: 1533897066110,
                     title: 'this is news 2',
                     url: '/news/2'
+                },
+                {
+                    id: 3,
+                    time: 1533897066110,
+                    title: 'this is news 3',
+                    url: '/news/3'
                 }
             ],
-            time:1533897066110
+            time: 1533897066110
         };
-        await this.ctx.render('news/list.html', dataList);
+        await this.ctx.render('news/list.html', {list: dataList.list});
     }
 }
 

@@ -27,7 +27,7 @@ module.exports = (appInfo) => {
     };
 
     config.assets = {
-        publicPath: '/public/',
+        publicPath: '/public/assets/',
         devServer: {
             debug: false,
             command: 'umi dev',

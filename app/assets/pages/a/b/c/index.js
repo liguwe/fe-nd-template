@@ -1,5 +1,5 @@
 export default () => {
     return (
-        <div>404 page</div>
+        <div>a/b/c page</div>
     );
 };
